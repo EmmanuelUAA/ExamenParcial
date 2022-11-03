@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<!------------------------SE MANDA LLAMAR LA HOJA DE ESTILOS EN ESTE CASO MAIN.CSS---------------------------------------------------------->
+  <link rel="stylesheet" href="Main.css">
+
+  <title>  Agencia Seven Autos</title>
+  <!------------SE AGREGA UN ICONO PARA LA PAGINA QUE APARECE DE LADO IZQUIERDO AL TITULO DE LA MISMA---------------------------------------------------------------------->
+  <link rel="Car Wheel Icon" href="http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2014-12-24/6085b63b5d66dfe07439ab70edf95733.ico">
+</head>
+    <body>
+        <header>
+<!---------------SE CREA LA CLASE MENU------------------------------------------------------------------->
+            <div class="menu">
+<!---------------SE CREA EL NAVBAR QUE DONDE SE DESPLEGARAN DIFERENTES OPCIONES QUE REDIRECCIONARAN YA SEA A OTRA PAGINA
+                HTML O A ALGUNA SECCION DENTRO DE LA MISMA------------------------------------------------------------------->
+                <nav class="navbar navbar-light bg-light">
+                    <img src="8524987ef14e4744acb335afafdce857.png" alt="">
+                <ul>
+                    <li><a href="Autosnuevos.html">Autos Nuevos</a></li>
+                    <li><a href="Promociones.html">Promociones</a></li>
+                    <li><a href="#Cotizacion-Rapida">Cotización Rapida</a></li>
+                    <li><a href="#Nuestros-Modelos">Nuestra Agencia</a></li>
+                    <li><a href="#Contáctanos">Contáctanos</a></li>
+                    <li><a href="LogIn.html">Iniciar Sesión</a></li>
+                    <li><a href="Registrate.html">Registrate</a></li>
+             </ul>     
+            </nav>
+            </div>
+<!-------------- SE CREA EL CARRUSEL DE IMAGENES, PARA ESTE EJEMPLO SE CREO UNO SIN BOTONES DE NEXT O 
+                DE PREV, SOLAMENTE SE CUENTA CON INDICADORES DEBAJO DE LA IMAGEN EN DONDE PUEDE SELECCIONAR UNO
+                MISMO QUE IMAGEN ES LA QUE DESEA VER-------------------------------------------------------------------->
+            <div id="AgenciaSlider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#AgenciaSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#AgenciaSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#AgenciaSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="23_FRD_F150_AZGR_Lightning_Home.webp" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="mercedes-amg-gtr-4869056_1280.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="NAZ_d8217ad78f094121a87e40bac20505f9.jpg" alt="Third slide">
+                  </div>
+                </div>
+            </div>
+            
+        </header>
+<!-------------------------------------SECCION DE  COTIZACION RAPIDA------------------------------------------------------------------------------------>
+ <!----------------AQUI SE MUESTRA UN FORMULARIO CON DATOS QUE SE DEBEN DE LLENAR.------------------------------------------------------------------>         
+          <section id="Cotizacion-Rapida">
+          <form action="" method="POST" id="form" >
+
+            <div class="form">
+              
+              <h1 style="color: red; margin-left: 400px;"> <img src="8524987ef14e4744acb335afafdce857.png" width="110px" alt="">  Cotización Rapida</h1>
+              <div class="grupo">
+                <input type="text" name="" id="name" placeholder="Nombre"  requered><span class="barra"></span>
+              </div>
+
+              <div class="grupo">
+                <input type="text" name="" id="Apellido" placeholder="Apellido"  requered><span class="barra"></span>
+              </div>
+
+              <div class="grupo">
+                <input type="tel" name="" id="Telefono" placeholder="Teléfono"  requered><span class="barra"></span>
+              </div>
+    
+              <div class="grupo">
+                <input type="text" name="" id="email" placeholder="Correo" requered><span class="barra"></span>
+              </div>
+    
+              <select style="width: 14%; float: left; padding: 10px; margin-left: 45px;" id="Carros" name="ModeloV" class="form form-control" rel="textModel">
+                <option value selected="selected" disabled="disabled"> Modelo </option>
+                <option value="March">March</option>
+                <option value="March">Camaro</option>
+                <option value="March">Vision</option>
+                <option value="March">Versa</option>
+                <option value="March">Altima</option>
+                <option value="March">Vento</option>
+              </select>
+              <br>
+              <br>
+              <button type="button">Enviar</button>   
+            </div>           
+        </form>
+          </section>
+         
+<!-------------------------------------SECCION DE NUESTROS MODELOS------------------------------------------------------------------------------------>
+ <!--------------------AQUI SE MUESTRA OTRA SECCION DENTRO DE LA MISMA PAGINA PRINCIPAL "MAIN" DONDE SE DA INFORMACION 
+                      ACERCA DEL NEGOCIO MISION, VISION, VALORES E HSTORIA DE LA MISMA-------------------------------------------------------------->
+        <section id="Nuestros-Modelos">
+
+          <div class="container">
+              <div class="texto">
+               
+                  <h2 style="color: red;">Nuestra Agencia</h2>
+             
+                  <p> Somos una empresa joven dedicada a la venta y compra de vehiculos de nueva generación con la intención de contar con suficiente catalago de autos de todo tipo de categorias, desde vehiculos de gama de entrada hasta los mas premium de ellos.
+                    Nuestro proposito es ofrecer nuestro almacen a un precio accesible para las personas que buscan un carro de cierto nivel, en las mejores condiciones posibles, pensando siempre en la comodidad y gustos de nuestros clientes.
+                    </p>
+                    <div class="programas">
+                      <div class="carta">
+                          <h3>Misión.</h3>
+                          <br>
+                          <br>
+                          <br>
+
+                          <p>Proveer productos y servicios automotrices únicos e innovadores que ofrecen valores medibles y superiores, en alianza con Renault, a todos nuestros acreedores.</p>
+                      </div>
+                      <div class="carta">
+                          <h3>Visión.</h3>
+                          <br>
+                          <br>
+                          <br>
+                          <p>Ser una empresa de calidad total en nuestros productos y servicios, en el trabajo en equipo y en toda la organización actuando con profesionalismo y buscando permanecer los próximos 10 años líderes en el mercado.</p>
+
+                      </div>
+                      <div class="carta">
+                          <h3>Valores.</h3>
+                          <br>
+                          <br>
+                          <br>
+                          <p>
+                           <b> Servicio:</b> La disposición de servir a los clientes y a la empresa con la mejor actitud caracteriza a todos los miembros del gran equipo de Nissan.
+                            <br>
+                            <b> Honestidad:</b> La compañía entiende que una reputación integra solo se logra actuando con honestidad y transparencia, por esa razón promueve estos valores dentro de su ambiente laboral a diario. 
+                           </div>  
+                  </div>
+                </div>
+          </div>
+      </section>
+
+<!-----------------SECCION DE CONTACTANOS ----------------------------------------------------------------->
+<!------------AQUI SE MUESTRA LA INFORMACION DE CONTACTO DIRECCION, TELEFONOS, Y UN MAPA CON LA UBICACION DE LA AGENCIA---------------------------------------------------------------------->
+      <section id="Contáctanos">
+        <div class="container">
+            <div class="texto">
+                <h1 style="color: red;">Contáctanos</h1>
+                
+                <p style="margin-top: 1em;">Blvd. a Zacatecas Norte #850<br>
+                  Col. Las Hadas. Aguascalientes,
+                  Aguascalientes<br>
+                  C.P. 20140</p>
+
+                  <p style="margin-bottom: 0px;"><a>
+                              Tel: (449)
+                                992
+                                9170</a>
+                  </p>
+
+                  <p style="margin-bottom: 0px;"><a>
+                    Ventas: (449)
+                      991
+                      8016</a>
+                   </p>
+<!------------- SE MANDA LLAMAR AL MAPS DE GOOGLE CON LA UBICACION ESPECIFICA DE LA AGENCIA--------------------------------------------------------------------->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14806.010462867218!2d-102.2950223!3d21.915221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46f6cc019c7efd24!2sNissan%20Torres%20Corzo%20Aguascalientes!5e0!3m2!1ses!2smx!4v1667155226077!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        </section>
+    
+    </body>
+<!------------PIE DE PAGINA DONDE SE MUESTRA INFORMACION GENERAL COMO LA UBICACION Y DETALLES DE LA AGENCIA---------------------------------------------------------------------->
+    <footer>
+      <div class="container">
+          
+          <p> |Agencia Seven Autos|Av. Aguascalientes Norte No. 711,Trojes de Alonso, Aguascalientes, Aguascalientes, México 20116 | Autos nuevos: 449-910-9393| </p>
+      </div>
+  </footer>
+
+  
+</html>

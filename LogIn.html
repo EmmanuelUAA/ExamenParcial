@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es"><!--librerias genrales para utilizar los arhivos-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Log In</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+<!---------------SE MANDA LLAMAR LA PAGINA FONTAWESOME DE LA CUAL SE JALAN LOS ICONOS PARA LA SECCION DEL FORMULARIO------------------------------------------------------------------->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<!------------------SE MANDA LLAMAR LA HOJA DE ESTILOS PARA EL FORMATO DEL FORMULARIO, INPUTS Y DEMAS DE ELEMENTOS DE LA PAGINA---------------------------------------------------------------->
+        <link rel="stylesheet" href="LogIn.css">
+
+    </head>
+    <body>
+        <form class="formulario">
+            <h1>Login</h1>
+<!--------------CLASE CONTENEDOR DE LOS INPUTS DEL FORMULARIO-------------------------------------------------------------------->
+            <div class="contenedor">
+                   <div class="input-contenedor">
+    <!--------------SE MANDA LLAMAR AL ICONO ESPECIFICO, PARA ESTO ES NECESARIO IR A LA PAGINA FONTAWESOME Y BUSCAR EL ICONO
+    --------------QUE SE DESEA UTILIZAR COPIAR EL LINK DEL ICONO Y PEGARLO AQUI------------------------------------------------------>
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="text" placeholder="Correo">
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" placeholder="Contraseña">
+                </div>
+                    <a href="Main.html"><input type="button" value="Login" class="button" onclick="link"></a>
+                    <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+<!-----------------SE MANDA LLAMAR LA PAGINA REGISTRATE----------------------------------------------------------------->
+                    <p>¿No tienes cuenta?<a class="link" href="Registrate.html">Registrate</a></p>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+/*Codigos universales de la pagina*/
+* {  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background: url(multa-no-llevar-atado-coche-perro-mascota.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*********************************** FORMATO DE DISEÑO DEL CUERPO DEL MODAL *******************************************************/
+body,  
+.modal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*********************************** FORMATO DE DISEÑO DEL MODAL *******************************************************/
+.modal { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-modal:checked ~ .modal { 
+  opacity: 1;
+  visibility: visible;
+}
+/*********************************** FORMATO DE ANIMACION DE DESPLAZAMIENTO DEL MODAL *******************************************************/
+.contenedor {  
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.4);
+  transition: all 500ms ease;
+  position: relative;
+  transform: translateX(-30%);
+}
+#btn-modal:checked ~ .modal .contenedor { 
+  transform: translateX(0%);
+}
+.contenedor header {  
+  padding: 10px;
+  background: rgb(46, 40, 40);
+  color: #fff;
+}
+.contenedor label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+.contenido {   /*com se vera el ocntenido*/
+  width: 100%;
+  padding: 10px;
+}
+.contenido h3 {
+  margin-bottom: 10px;
+}
+.contenido p {
+  margin-bottom: 7px;
+}
+#btn-modal {
+  display: none;
+}
+.lbl-modal {
+  background: #1b2838;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) { /*tamaños generales*/
+  .contenedor {
+    width: 95%;
+  }
+}

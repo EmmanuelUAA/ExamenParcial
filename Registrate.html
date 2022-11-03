@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>       
+    <meta charset ="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible " content = "IE = edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-------------SE REFERENCIA LA PAGINA FONTAWESOME PARA HACER USO DE SUS ICONOS PARA EL FORMULARIO--------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+<!---------MANDA LLAMAR LA HOJA DE ESTILOS------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="Registrate.css"> 
+    <title>Registrate</title>
+</head>
+
+
+<body> 
+<!-------------FORMULARIO DE REGISTRO DE NUEVOS USUAIROS--------------------------------------------------------------------------------->
+    <form action="" method="POST" id="form" >
+
+        <div class="form">
+          <!-------------LOGO DE LA EMPRESA--------------------------------------------------------------------------------->
+           <h1><img src="8524987ef14e4744acb335afafdce857.png" id="logo" width="200" height="200"class="rounded-circle"></h1>
+          <div class="grupo">
+<!--------------ICONO DE LA PAGINA FONTAWESOME SE BUSCAN AHI MISMO Y SE COPIA EL LINK AQUI PARA REFERENCIARLOS-------------------------------------------------------------------------------->
+            <i class="fas fa-user icon"></i>
+            <input type="text" name="" id="name" placeholder="Nombre Completo"  requered><span class="barra"></span>  
+          </div>
+
+          <div class="grupo">
+            <i class="fas fa-envelope icon"></i>
+            <input type="text" name="" id="email" placeholder="Correo" requered><span class="barra"></span>
+            
+          </div>
+
+          <div class="grupo">
+            <i class="fas fa-key icon"></i>
+            <input type="password" name="" id="password" placeholder="Contraseña" requered><span class="barra"></span>
+            
+          </div>
+<!-------------CLASE WARNINGS PARA MOSTRAR LA VALIDACION DE LOS DATOS--------------------------------------------------------------------------------->
+          <p class="warnings" id="warnings"></p>
+<!--------------BOTON PARA CREAR LA CUENTA -------------------------------------------------------------------------------->
+          <button type="submit">Crear cuenta</button>
+          
+           <br>
+           <!-----------INFORMACION PARA EL USUARIO Y REDIRECCIONAMIENTO A LA PAGINA LOGIN----------------------------------------------------------------------------------->
+           <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+           <p>¿Ya tienes una cuenta?<a class="link" href="LogIn.html">Iniciar Sesion</a></p>
+           <!---------BOTON QUE MANDA A LA PAGINA DEL MODAL------------------------------------------------------------------------------------->
+           <a href="Modal.html"><button type="button">¿Porqué registrarte?</button></a>
+        </div>
+
+        
+    </form> 
+<!------------SE MANDA LLAMAR EL JS PARA QUE HAGA LA VALIDACION DE LOS DATOS DEL FORMULARIO---------------------------------------------------------------------------------->
+    <script src="Validacion.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es"><!--librerias genrales para utilizar los arhivos-->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ventana Modal</title>
+<!----------SE MANDA LLAMAR LA HOJA DE ESTILOS-------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="Modal.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <div>
+<!------------------BOTON DE AVIOS PARA DESPLEGAR EL MODAL------------------------------------------------------------------------------------>
+      <input type="checkbox" id="btn-modal" />
+      <label for="btn-modal" class="lbl-modal">Aviso Importante</label> 
+<!-------------------SE CREA LA ESTRUCTURA Y CONTENIDO DEL MODAL----------------------------------------------------------------------------------->
+      <div class="modal">
+        <div class="contenedor">
+          <header style="font-family: 'Times New Roman', serif;">SEVEN AUTOS</header>
+          <label for="btn-modal" style=" font-family: 'Times New Roman', serif;"> Cerrar </label>
+          <div class="contenido">
+            <h3>Antes de registrarte</h3>
+            <p>
+                Es importante que registres una cuenta en nuestro sitio ya que de esa forma es como
+                podemos ofrecerte el mejor de los servicios ya que al tener una cuenta podemos 
+                revisar tu historial de consultas y ofrecerte un trato personalizado.
+            </p>
+<!------------------BOTON QUE REDIRECCIONA A LA PAGINA DE REGISTRATE------------------------------------------------------------------------------------>
+            <a href="Registrate.html"><button type="button">Continuar con el registro</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
